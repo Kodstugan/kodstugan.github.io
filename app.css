@@ -1,0 +1,133 @@
+* {
+  -webkit-box-sizing:     border-box;
+  -moz-box-sizing:        border-box;
+  box-sizing:             border-box;
+  margin:                 0;
+  padding:                0;
+  font-family:            "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  width:     100%;
+  height:    100%;
+  font-size: 15px;
+}
+
+body {
+  background: #161616;
+  overflow:   auto;
+}
+
+#app {
+  width:                 100%;
+  max-width:             1024px;
+  margin:                0 auto 100px;
+  overflow:              hidden;
+  display:               grid;
+  grid-template-columns: minmax(400px, 512px) minmax(300px, 512px);
+  padding:               0 10px 10px 10px;
+}
+
+.column {
+  overflow:   hidden;
+  background: #fff;
+}
+
+.column img {
+  width:   100%;
+  display: block;
+}
+
+.gradient {
+  background: #0f6ecc;
+  background: -moz-linear-gradient(-45deg, #0f6ecc 0%, #169b96 100%);
+  background: -webkit-linear-gradient(-45deg, #0f6ecc 0%, #169b96 100%);
+  background: linear-gradient(135deg, #0f6ecc 0%, #169b96 100%);
+  filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f6ecc', endColorstr='#169b96', GradientType=1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fugaz One", sans-serif;
+}
+
+h1 {
+  font-size:     32px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size:   15px;
+  opacity:     0.8;
+  line-height: 1.5;
+}
+
+p.small {
+  font-size: 14px;
+}
+
+a {
+  color: #0f6ecc;
+}
+
+.button {
+  width:           100%;
+  display:         block;
+  padding:         20px 10px;
+  text-align:      center;
+  color:           #fff;
+  text-decoration: none;
+  font-weight:     500;
+  border-radius:   30px;
+  margin-top:      30px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+section {
+  background: #fff;
+  padding:    30px;
+}
+
+section:nth-child(even) {
+  background: #F7F7F7;
+}
+
+.header {
+  width:     100%;
+  max-width: 1024px;
+  margin:    0 auto;
+  padding:   40px 10px 40px;
+}
+
+.header img {
+  width: 140px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  #app {
+    grid-template-columns: 100%;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .header {
+    padding: 15px 10px;
+  }
+
+  .header img {
+    width: 80px;
+  }
+}
