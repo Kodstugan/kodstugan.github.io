@@ -117,13 +117,14 @@ a {
 .about-wrapper {
   width:      100%;
   background: #fff;
+  padding:    0 40px;
 }
 
 .about {
   width:                 100%;
   max-width:             1024px;
   margin:                0 auto;
-  padding:               80px 40px;
+  padding:               80px 0;
   background:            #fff;
   display:               grid;
   grid-template-columns: 1fr 1fr;
@@ -145,13 +146,14 @@ a {
 .help-wrapper {
   width:      100%;
   background: #F5F5F5;
+  padding:    0 40px;
 }
 
 .help {
   width:                 100%;
   max-width:             1024px;
   margin:                0 auto;
-  padding:               80px 40px;
+  padding:               80px 0;
   background:            #F5F5F5;
   display:               grid;
   grid-template-columns: 1fr 1fr;
@@ -171,7 +173,8 @@ a {
 /* about ------------------------------------------------------------------------------------------------------------ */
 
 .contact-wrapper {
-  width: 100%;
+  width:   100%;
+  padding: 0 40px;
 }
 
 .contact {
@@ -191,9 +194,13 @@ a {
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 610px) {
   .menu-wrapper {
     display: none;
+  }
+
+  .about-wrapper, .help-wrapper, .contact-wrapper {
+    padding: 0 20px;
   }
 
   .header {
@@ -205,7 +212,7 @@ a {
   }
 
   .about, .help, .contact {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 
   .divider {
