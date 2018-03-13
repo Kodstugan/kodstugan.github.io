@@ -4,130 +4,215 @@
   box-sizing:             border-box;
   margin:                 0;
   padding:                0;
-  font-family:            "Montserrat", sans-serif;
+  font-family:            "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-html, body {
-  width:     100%;
-  height:    100%;
-  font-size: 15px;
-}
-
 body {
-  background: #161616;
-  overflow:   auto;
-}
-
-#app {
-  width:                 100%;
-  max-width:             1024px;
-  margin:                0 auto 100px;
-  overflow:              hidden;
-  display:               grid;
-  grid-template-columns: minmax(400px, 512px) minmax(300px, 512px);
-  padding:               0 10px 10px 10px;
-}
-
-.column {
-  overflow:   hidden;
-  background: #fff;
-}
-
-.column img {
-  width:   100%;
-  display: block;
-}
-
-.gradient {
-  background: #0f6ecc;
-  background: -moz-linear-gradient(-45deg, #0f6ecc 0%, #169b96 100%);
-  background: -webkit-linear-gradient(-45deg, #0f6ecc 0%, #169b96 100%);
-  background: linear-gradient(135deg, #0f6ecc 0%, #169b96 100%);
-  filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f6ecc', endColorstr='#169b96', GradientType=1);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Fugaz One", sans-serif;
+  background-color:      #000000;
+  background-image:      url("assets/bg.jpg");
+  background-size:       cover;
+  background-repeat:     no-repeat;
+  background-attachment: fixed;
+  background-position:   center top;
 }
 
 h1 {
-  font-size:     32px;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 24px;
+  font-family: "Fugaz One", sans-serif;
+  font-size:   36px;
 }
 
 p {
-  font-size:   15px;
-  opacity:     0.8;
+  font-size:   16px;
   line-height: 1.5;
-}
-
-p.small {
-  font-size: 14px;
+  opacity:     0.9;
 }
 
 a {
-  color: #0f6ecc;
+  color: inherit;
 }
 
-.button {
-  width:           100%;
-  display:         block;
-  padding:         20px 10px;
-  text-align:      center;
+.divider {
+  width:      100px;
+  height:     5px;
+  margin:     20px 0 40px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#73329f+0,ae7d2a+100 */
+  background: #73329f; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #73329f 0%, #ae7d2a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #73329f 0%, #ae7d2a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #73329f 0%, #ae7d2a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr='#73329f', endColorstr='#ae7d2a', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* menu ------------------------------------------------------------------------------------------------------------- */
+
+.menu-wrapper {
+  width:    100%;
+  overflow: hidden;
+  padding:  0 40px;
+}
+
+.menu {
+  width:         100%;
+  max-width:     1024px;
+  height:        70px;
+  margin:        0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.menu .left {
+  float: left;
+}
+
+.menu .left li {
+  margin-right: 40px;
+}
+
+.menu .right {
+  float: right;
+}
+
+.menu .right li {
+  margin-left: 20px;
+}
+
+.menu .right img {
+  height:     26px;
+  display:    block;
+  margin-top: 22px;
+}
+
+.menu ul {
+  list-style:  none;
+  line-height: 70px;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.menu a {
+  font-size:       14px;
   color:           #fff;
+  text-transform:  uppercase;
+  font-weight:     600;
   text-decoration: none;
-  font-weight:     500;
-  border-radius:   30px;
-  margin-top:      30px;
+  letter-spacing:  5px;
 }
 
-.button:hover {
-  cursor: pointer;
-}
-
-section {
-  background: #fff;
-  padding:    30px;
-}
-
-section:nth-child(even) {
-  background: #F7F7F7;
-}
+/* header ----------------------------------------------------------------------------------------------------------- */
 
 .header {
-  width:     100%;
-  max-width: 1024px;
-  margin:    0 auto;
-  padding:   40px 10px 40px;
+  width:      100%;
+  padding:    50px 0;
+  text-align: center;
 }
 
 .header img {
-  width: 140px;
+  width: 200px;
 }
 
-@media (max-width: 700px) {
-  h1 {
-    font-size: 28px;
-  }
+/* about ------------------------------------------------------------------------------------------------------------ */
 
-  #app {
-    grid-template-columns: 100%;
-  }
+.about-wrapper {
+  width:      100%;
+  background: #fff;
+}
 
-  section {
-    padding: 20px;
+.about {
+  width:                 100%;
+  max-width:             1024px;
+  margin:                0 auto;
+  padding:               80px 40px;
+  background:            #fff;
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:              40px;
+}
+
+.about .gallery {
+  display:     flex;
+  align-items: center;
+}
+
+.about .gallery img {
+  width:         100%;
+  border-radius: 5px;
+}
+
+/* help ------------------------------------------------------------------------------------------------------------- */
+
+.help-wrapper {
+  width:      100%;
+  background: #F5F5F5;
+}
+
+.help {
+  width:                 100%;
+  max-width:             1024px;
+  margin:                0 auto;
+  padding:               80px 40px;
+  background:            #F5F5F5;
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:              40px;
+}
+
+.help .gallery {
+  display:     flex;
+  align-items: center;
+}
+
+.help .gallery img {
+  width:         100%;
+  border-radius: 5px;
+}
+
+/* about ------------------------------------------------------------------------------------------------------------ */
+
+.contact-wrapper {
+  width: 100%;
+}
+
+.contact {
+  width:                 100%;
+  max-width:             1024px;
+  margin:                0 auto;
+  padding:               80px 40px;
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:              40px;
+  color:                 #fff;
+}
+
+@media (max-width: 768px) {
+  .about, .help, .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 580px) {
+  .menu-wrapper {
+    display: none;
   }
 
   .header {
-    padding: 15px 10px;
+    padding: 20px 0;
   }
 
   .header img {
-    width: 80px;
+    width: 100px;
+  }
+
+  .about, .help, .contact {
+    padding: 40px 20px;
+  }
+
+  .divider {
+    margin: 10px 0 20px 0;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 }

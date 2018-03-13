@@ -7,24 +7,34 @@
         content="Kodstugan är ett tillfälle då folk som studerar någon form programmering samlas för att lösa problem tillsammans. T.ex fritidsprojekt och skoluppgifter. Eventet är till för att man tillsammans ska kunna lösa svåra uppgifter, och kunna få hjälp när man kör fast fullständigt. Här kan man också få inspiration till nya saker man kan koda."/>
   <meta name="google" content="nositelinkssearchbox"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<div class="header">
-  <img src="logo.svg" alt="">
-</div>
-<div id="app">
-  <div class="column">
-    <section>
-      <h1>Vad är detta?</h1>
+<section class="menu-wrapper">
+  <section class="menu">
+    <ul class="left">
+      <li><a href="#">Start</a></li>
+      <li><a href="#help">Hjälplistan</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+    <ul class="right">
+      <li><a href="https://www.facebook.com/kodstugan/"><img src="assets/facebook.svg"></a></li>
+    </ul>
+  </section>
+</section>
+<section class="header">
+  <img src="assets/logo.svg">
+</section>
+<section class="about-wrapper">
+  <section class="about">
+    <div>
+      <h1>Kodstugan</h1>
+      <div class="divider"></div>
       <p>
         Du har kommit till Kodstugans hemsida!
-        <br/>
-        <br/>
-        Vi sitter varje Onsdag i Datavetarnas cafeteria och hackar.
-        Vi anordnar även föreläsningar, egna evenemang och evenemang på olika företag, så se till att följa oss på
-        <a href="https://www.facebook.com/kodstugan/">Facebook</a>.
+        Vi sitter varje Onsdag i Datavetarnas cafeteria och hackar. Vi anordnar även föreläsningar, egna evenemang och
+        evenemang på olika företag, så se till att följa oss på Facebook.
         <br/>
         <br/>
         Det spelar ingen roll om du är Java master eller nybörjare, alla är välkomna!
@@ -32,9 +42,20 @@
         <br/>
         Psst, vi har fika också…
       </p>
-    </section>
-    <section>
-      <h1>Behöver du hjälp?</h1>
+    </div>
+    <div class="gallery">
+      <img src="assets/1.jpg">
+    </div>
+  </section>
+</section>
+<section class="help-wrapper">
+  <section class="help" id="help">
+    <div class="gallery">
+      <img src="assets/help.png">
+    </div>
+    <div>
+      <h1>Hjälplistan</h1>
+      <div class="divider"></div>
       <p>
         Segmentation fault? NullpointerException?
         <br/>
@@ -43,12 +64,16 @@
         tillsammans är vi (förhoppningsvis) kloka.
         <br/>
         <br/>
-        Nedanför kan du anmäla dig för att få hjälp!
+        <a href="https://help.kodstugan.io">Klicka här</a> för att anmäla dig.
       </p>
-      <a href="https://help.kodstugan.io" class="button gradient">Jag behöver hjälp!</a>
-    </section>
-    <section>
+    </div>
+  </section>
+</section>
+<section class="contact-wrapper">
+  <section class="contact" id="contact">
+    <div>
       <h1>Kontakt</h1>
+      <div class="divider"></div>
       <p>
         Vi är ett gäng datavetare som tillsammans har skapat Kodstugan. Du hittar oss vanligtvis i Datavetarnas
         cafeteria Foobar som ligger i ITC-huset (Lägerhyddsvägen 2).
@@ -57,13 +82,8 @@
         Se även till att gilla oss på <a href="https://www.facebook.com/kodstugan/">Facebook</a> så du inte missar våra
         evenemang och annat kul!
       </p>
-    </section>
-  </div>
-  <div class="column gradient">
-    <img src="1.jpg" alt="">
-    <img src="2.jpg" alt="">
-    <img src="3.jpg" alt="">
-  </div>
-</div>
+    </div>
+  </section>
+</section>
 </body>
 </html>
